@@ -10,7 +10,7 @@ services:
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec rackup -p $PORT"
+    startCommand: "rackup -p $PORT"
     envVars:
       - key: DATABASE_URL
         fromDatabase:

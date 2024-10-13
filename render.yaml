@@ -9,8 +9,8 @@ services:
     name: todos
     runtime: ruby
     plan: free
-    buildCommand: "./bin/render-build.sh"
-    startCommand: "rackup -p $PORT"
+    buildCommand: ./bin/render-build.sh
+    startCommand: bundle exec ruby todo.rb
     envVars:
       - key: DATABASE_URL
         fromDatabase:

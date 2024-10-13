@@ -16,5 +16,3 @@ services:
         fromDatabase:
           name: todos
           property: connectionString
-      - key: ENV
-        value: production

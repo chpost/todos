@@ -3,9 +3,9 @@ source "https://rubygems.org"
 gem "erubis"
 gem 'pg'
 gem "sinatra"
+gem 'sinatra-contrib'
 
 group :development do
-  gem 'sinatra-contrib'
   gem "webrick"
 end
 

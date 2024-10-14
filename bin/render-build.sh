@@ -3,4 +3,4 @@
 set -o errexit
 
 bundle install
-bundle exec ruby migrate.rb
+# bundle exec ruby migrate.rb

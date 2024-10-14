@@ -17,4 +17,4 @@ db.exec <<~SQL
   );
 SQL
 
-db.disconnect
+db.close

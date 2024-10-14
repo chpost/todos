@@ -1,6 +1,6 @@
 require 'pg'
 
-db = PG.connect(ENV['DATEBASE_URL'])
+db = PG.connect(ENV['DATABASE_URL'])
 
 db.exec <<~SQL
   CREATE TABLE lists (

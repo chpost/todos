@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem "erubis"
 gem 'pg'
+gem 'rackup'
 gem "sinatra"
 gem 'sinatra-contrib'
 

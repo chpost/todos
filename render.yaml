@@ -9,9 +9,13 @@ services:
     name: todos
     runtime: ruby
     plan: free
-    buildCommand: ./bin/render-build.sh
+    buildCommand: bundle install
     startCommand: bundle exec ruby todo.rb
     envVars:
+      - key: APP_ENV
+        value: production
+      - key: SESSION_SECRET
+        generateValue: true
       - key: DATABASE_URL
         fromDatabase:
           name: todos

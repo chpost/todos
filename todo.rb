@@ -1,3 +1,4 @@
+require 'rack/session'
 require "sinatra"
 require "sinatra/content_for"
 require "tilt/erubis"
@@ -6,7 +7,6 @@ require_relative 'database_persistence'
 
 configure do
   enable :sessions
-  set :session_secret, production? ? ENV['SESSION_SECRET'] : SecureRandom.hex(32)
   set :erb, :escape_html => true
 end
 

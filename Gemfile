@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'erubis'
 gem 'pg'
+gem 'rack_encrypted_cookie'
 gem 'rackup'
 gem 'sinatra'
 gem 'sinatra-contrib'

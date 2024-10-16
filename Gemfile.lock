@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     base64 (0.2.0)
+    coder_decorator (2.0.0)
     erubis (2.7.0)
     multi_json (1.15.0)
     mustermann (3.0.3)
@@ -16,6 +17,9 @@ GEM
       rack (>= 3.0.0, < 4)
     rack-session (2.0.0)
       rack (>= 3.0.0)
+    rack_encrypted_cookie (1.0.0)
+      coder_decorator (>= 1.0.2)
+      rack
     rackup (2.1.0)
       rack (>= 3)
       webrick (~> 1.8)
@@ -44,6 +48,7 @@ DEPENDENCIES
   erubis
   pg
   puma
+  rack_encrypted_cookie
   rackup
   sinatra
   sinatra-contrib
